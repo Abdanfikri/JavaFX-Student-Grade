@@ -11,9 +11,7 @@ import javafx.collections.FXCollections;
 import javafx.scene.control.Alert;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -328,6 +326,7 @@ public class Controller implements Initializable {
 
 
         loadDataFromFile();
+
         colNilai.setCellValueFactory(cellData -> {
             Mahasiswa mahasiswa = cellData.getValue();
             double nilai = calculateNilai(mahasiswa);
